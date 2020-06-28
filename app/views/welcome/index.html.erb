@@ -13,6 +13,7 @@
 
     <!-- Bootstrap core CSS -->
 <link href="/docs/4.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+   
 
     <!-- Favicons -->
 <link rel="apple-touch-icon" href="/docs/4.5/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
@@ -84,8 +85,8 @@
       <h1>Finance Geek</h1>
       <p class="lead text-muted">Learn to invest safely and start earning passive income today!</p>
       <p>
-        <a href="#" class="btn btn-primary my-2">Videos</a>
-        <a href="#" class="btn btn-secondary my-2">Guides</a>
+        <%= link_to "Video", video_path, class: "btn btn-secondary my-2" %>
+        <%= link_to "e-Sport Challenge", esport_path, class: "btn btn-primary my-2" %>
       </p>
     </div>
   </section>
@@ -101,8 +102,8 @@
               <p class="card-text">Safest investment. </p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary"><%= link_to "Information", tank_info_path  %></button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary"><%= link_to "Guide", tank_roi_path  %></button>
                 </div>
                 <small class="text-muted">9 mins</small>
               </div>
@@ -116,8 +117,8 @@
               <p class="card-text">Unit Trust</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary"><%= link_to "Information", fighter_info_path  %></button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary"><%= link_to "Guide", fighter_roi_path  %></button>
                 </div>
                 <small class="text-muted">9 mins</small>
               </div>
@@ -128,11 +129,11 @@
           <div class="card mb-4 shadow-sm">
             <%= image_tag "support3.jpeg", :width => '100%', :height => '225' %><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Support</text></svg>
             <div class="card-body">
-              <p class="card-text">TInsurance</p>
+              <p class="card-text">Insurance</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary"><%= link_to "Information", support_info_path  %></button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary"><%= link_to "Guide", support_roi_path  %></button>
                 </div>
                 <small class="text-muted">9 mins</small>
               </div>
@@ -147,8 +148,8 @@
               <p class="card-text">Stock Market</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary"><%= link_to "Information", assasin_info_path  %></button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary"><%= link_to "Guide", assasin_roi_path  %></button>
                 </div>
                 <small class="text-muted">9 mins</small>
               </div>
@@ -159,11 +160,11 @@
           <div class="card mb-4 shadow-sm">
             <%= image_tag "mage3.jpeg", :width => '100%', :height => '225' %><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Mage</text></svg>
             <div class="card-body">
-              <p class="card-text">Unit Trust</p>
+              <p class="card-text">Islamic Investment</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary"><%= link_to "Information", mage_info_path  %></button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary"><%= link_to "Guide", mage_roi_path  %></button>
                 </div>
                 <small class="text-muted">9 mins</small>
               </div>
@@ -172,13 +173,13 @@
         </div>
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <%= image_tag "mm3.jpeg", :width => '100%', :height => '225' %><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <%= image_tag "mm3.jpeg", :width => '100%', :height => '225' %><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Credit card</text></svg>
             <div class="card-body">
-              <p class="card-text">fill in later</p>
+              <p class="card-text">Credit card</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary"><%= link_to "Information", mm_info_path  %></button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary"><%= link_to "Guide", mm_roi_path  %></button>
                 </div>
                 <small class="text-muted">9 mins</small>
               </div>
@@ -198,8 +199,8 @@
     <p class="float-right">
       <a href="#">Back to top</a>
     </p>
-    <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-    <p>New to Bootstrap? <a href="https://getbootstrap.com/">Visit the homepage</a> or read our <a href="/docs/4.5/getting-started/introduction/">getting started guide</a>.</p>
+    <h4>(This portal is still undergoing beta testing, we hope to bring the complexity of<br /> financial investing to youngster, gamers and whoever who wanted to be financially free.</h4>
+    <p>If you find the information here is useful, please don't hesitate to share it to your social media.)</p>
   </div>
 </footer>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
